@@ -46,6 +46,7 @@ init()
 setInterval 함수를 쓰는 방법은 간단하다.
 setInterval(함수명, 반복시간);
 함수 명이라고 표현한 이유는 위의 코드에서 getTime()을 가지고 예시를 보여주자면 아래와 같이 작성되어야한다.
+- clock.js
 ``` javascript
 function getTime() {
     ...
@@ -59,6 +60,7 @@ function init(){
 
 위와 같이 코드를 동작시키면, 매 초마다 동작을 한다. 이를 동작 시킬 때 11:54:9 ... 11:54:10 이런 식으로 표현이 된다.
 이때 좀 더 보기 좋게 11:54:09 처럼 보여주기 위해 아래와 같은 코드를 작성할 수 있다.
+- clock.js
 ```javascript
 function getTime(){
     ...
@@ -75,7 +77,7 @@ function addZeroToSec(seconds){
 }
 ```
 하지만 강의에서 보다 더 섹쉬한 코드를 보여주었다. (미쵸따..)
-
+- clock.js
 ```javascript
 function getTime(){
     ...
@@ -87,6 +89,7 @@ function getTime(){
 
 나는 이 기능에서 연도, 월, 일, 요일, 시간 순으로 표현하고 싶어서 아래와 같이 소스 코드를 변경했다.
 
+- clock.js
 ``` javascript
 const clockContainer = document.querySelector(".js-clock"),
  clockTitle = clockContainer.querySelector(".js-title");
