@@ -23,25 +23,36 @@ function getTime(){
     }`;
 }
 
+
 function textDay(day){
-    if(day===0){
-        return "(일)"
-    } else if (day === 1){
-        return "(월)"
-    } else if (day === 2){
-        return "(화)"
-    } else if (day === 3){
-        return "(수)"
-    } else if (day === 4){
-        return "(목)"
-    } else if (day === 5){
-        return "(금)"
-    } else if (day === 6){
-        return "(토)"
-    } else {
-        return " "
-    }
+    days = ["(일)","(월)","(화)","(수)","(목)","(금)","(토)"];
+    return days[day]
 }
+
+
+/*
+아래 소스가 위의 소스로 변경 되었습니다.
+*/
+// function textDay(day){
+//     if(day===0){
+//         return "(일)"
+//     } else if (day === 1){
+//         return "(월)"
+//     } else if (day === 2){
+//         return "(화)"
+//     } else if (day === 3){
+//         return "(수)"
+//     } else if (day === 4){
+//         return "(목)"
+//     } else if (day === 5){
+//         return "(금)"
+//     } else if (day === 6){
+//         return "(토)"
+//     } else {
+//         return " "
+//     }
+// }
+
 function init() {
     setInterval(getTime,1000);
 }

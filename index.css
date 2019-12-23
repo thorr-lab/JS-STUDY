@@ -1,0 +1,17 @@
+.form,
+.greetings {
+  display: none;
+}
+
+body {
+  color : #34495e
+}
+
+/* 안보여 줬다가 보여주게 하려고 하는 효과 */
+.form, greetings{
+  display : none;
+}
+
+.showing {
+  display  : block;
+}
